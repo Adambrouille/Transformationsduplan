@@ -1,0 +1,98 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Utilise la couleur du texte parent */
+}
+
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+/* Styles spécifiques */
+/* Ajoutez ici les styles pour les animations et les transformations */
+#buzz-animation {
+    /* Styles pour l'animation de Buzz l'Éclair */
+}
+
+#orthogonal-symmetry, #central-symmetry {
+    text-align: center;
+    /* Styles pour les animations de symétrie */
+}
+
+#translation-animation {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation: translate 3s infinite alternate;
+    margin: 0 auto;
+}
+
+@keyframes translate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+#square1 {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation: reflect 3s infinite alternate;
+    margin: 0 auto;
+}
+
+#square2 {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation: rotate 3s infinite alternate;
+    margin: 0 auto;
+}
+
+@keyframes reflect {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(-1);
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
