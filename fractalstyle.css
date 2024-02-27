@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.tik-tok .tiktok {
+    position: relative;
+  }
+  .tik-tok .tiktok .fas {
+    font-size: 60px;
+    color: #519161;
+  }
+  .tik-tok .tiktok:hover {
+    font-size: 75px;
+  }
+.circles {
+    width: 60px;
+    height: 20px;
+}
+
+.fractal {
+    width: 60px;
+    height: 20px;
+    background-color: #67B46D;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    animation-name: spiral;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: transform; /* Removed the extraneous text here */
+}
+
+@keyframes spiral {
+    from {
+        transform: translate3d(0, 10%, 0) rotate(0deg) scale(0);
+    }
+    to {
+        transform: translate3d(0, 400%, 0) rotate(60deg) scale(1.3);
+    }
+}
