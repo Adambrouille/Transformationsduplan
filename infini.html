@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'infini</title>
+<style>
+  body {
+    margin: 0;
+    background: url('360_F_264705579_pNVYG7anCvljEYL23ERxYigpgiBDDqVs.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+  .video-container {
+    position: relative;
+    width: 60%; /* Responsive width */
+    padding-bottom: 45%; /* Aspect ratio */
+    margin-bottom: 2em;
+  }
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .arrow-link {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+  }
+  .arrow-link::after {
+    content: '➡';
+    font-size: 50px;
+    margin-left: 10px;
+  }
+
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .video-container {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .video-container {
+      width: 95%; /* Adjust width for very small screens */
+    }
+    .arrow-link::after {
+      font-size: 30px; /* Adjust arrow size for very small screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1 style="margin-bottom: 10px;">L'infini</h1>
+
+<div class="video-container">
+  <video src="New Project ‐ Réalisée avec Clipchamp.mp4" controls></video>
+  <a href="inf.html" class="arrow-link"></a>
+</div>
+
+
+
+</body>
+</html>

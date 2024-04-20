@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            background-color: #dbd5d5;
+            overflow-x: hidden;
+        }
+        .container, .infini-container, .paradoxe-container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .video-container, .text-container {
+            padding: 20px;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 30%;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+        }
+        .info-container, .definition-container, .paradoxe-text-container {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .info-container h2, .definition-container h2, .paradoxe-text-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info-container p, .definition-container p, .paradoxe-text-container p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .arrow-link{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+        .arrow-link::after {
+            content: '➡';
+            font-size: 50px;
+            margin-left: 10px;
+            color: black;
+        }
+        footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0rem;
+}
+    </style>
+</head>
+<body>
+    <H1>L'infini</H1>
+    <div class="container">
+        <div class="video-container">
+            <video src="Mobius Strip II Animated Movie.mp4" controls></video>
+        </div>
+        <div class="info-container">
+            <h2>À propos d'Escher</h2>
+            <p>Maurits Cornelis Escher, connu sous le nom d’Erscher, était un artiste graphique néerlandais célèbre pour ses œuvres qui jouent avec la perspective et l’espace pour créer des illusions optiques étonnantes. Ses gravures et dessins explorent des concepts mathématiques comme l’infini et la symétrie, souvent avec des motifs répétitifs et des structures impossibles</p>
+        </div>
+    </div>
+    <div class="infini-container">
+        <div class="definition-container">
+            <h2>Définition de l'infini</h2>
+            <p>En mathématiques, l'infini est un concept qui exprime l'idée de quantité sans limite. Il est souvent symbolisé par le signe ∞ (lemniscate).</p>
+            <p>En littérature, l'infini peut être utilisé pour décrire quelque chose qui est incroyablement grand, sans fin, ou au-delà de la compréhension humaine.</p>
+        </div>
+    </div>
+    <div class="paradoxe-container">
+        <div class="paradoxe-text-container">
+            <h2>Le paradoxe d'Achille et la tortue</h2>
+            <p>Le paradoxe d'Achille et la tortue est l'un des paradoxes de Zénon, qui montre que le mouvement est une illusion. Dans ce paradoxe, Achille donne à une tortue une avance dans une course. Même si Achille court plus vite que la tortue, il ne peut jamais la dépasser, car chaque fois qu'Achille atteint l'endroit où la tortue était, la tortue a avancé un peu plus loin.</p>
+        </div>
+        <div class="video-container">
+            <!-- Intégrez votre vidéo ici -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/skM37PcZmWE?si=RzuBJaWP7fNbQeMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Comparaison de l'infiniment grand et de l'infiniment petit -->
+<div class="paradoxe-container">
+    <div class="paradoxe-text-container">
+        <h2>Comparaison de l'infiniment grand et de l'infiniment petit</h2>
+        <p>Le concept de l'infini se manifeste à deux extrémités du spectre de la taille : l'infiniment grand, représenté par l'immensité de l'espace et les galaxies lointaines, et l'infiniment petit, illustré par les particules subatomiques et les forces fondamentales. Le cyclotron, un type d'accélérateur de particules, nous permet d'explorer l'infiniment petit en accélérant des particules à des vitesses proches de celle de la lumière, nous donnant ainsi un aperçu des lois qui régissent l'univers à l'échelle microscopique.</p>
+    <p style="text-align: center;"><a href="https://home.cern/fr/science/accelerators/large-hadron-collider" style="text-decoration: none; text-align: center;">--Grand collisionneur de hadrons--</a></p>
+    <p style="text-align: center;"><a href="https://www.nasa.gov/" style="text-decoration: none; text-align: center;">--Nasa--</a></p>
+    <p style="text-align: center;"><a href="https://www.esa.int/" style="text-decoration: none; text-align: center;">--Esa--</a></p>
+    </div>
+</div>
+
+<!-- Explication du monoèdre -->
+<div class="paradoxe-container">
+    <div class="paradoxe-text-container">
+        <h2>Qu'est-ce qu'un monoèdre?</h2>
+        <p>Un monoèdre est une forme géométrique tridimensionnelle composée d'une seule surface plane. Cette définition peut sembler paradoxale, car nous associons généralement les formes tridimensionnelles à la présence de plusieurs faces. Cependant, dans le monde des mathématiques et de la topologie, il est possible de concevoir des structures qui défient notre perception habituelle de la dimensionnalité.</p>
+        <!-- Emplacement pour une vidéo sur le monoèdre -->
+        <div class="video-container">
+            <!-- Intégrez votre vidéo ici -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gl2piGjXv7w?si=v3z4n1UvmsDcmMAT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </div>
+</div>
+<!-- Démonstration que 1 = 0.999... -->
+<div class="paradoxe-container">
+    <div class="paradoxe-text-container">
+        <h2>Démonstration que 1 = 0.999...</h2>
+        <p>La déclaration que 1 = 0.999999... peut sembler contre-intuitive, mais elle est mathématiquement correcte. Voici une démonstration simple :</p>
+        <p>Soit x = 0.99999...</p>
+        <p>Multiplication par 10 des deux côtés donne 10x = 9.99999...</p>
+        <p>En soustrayant la première équation de la seconde, nous obtenons :</p>
+        <p>10x - x = 9.99999... - 0.999999...</p>
+        <p>Cela simplifie à 9x = 9, et en divisant les deux côtés par 9, nous trouvons que x = 1.</p>
+        <p>Donc, 0.99999... = 1.</p>
+    </div>
+</div>
+
+<!-- Réponse à la question "L'infini est-il fini?" -->
+<div class="paradoxe-container">
+    <div style="margin-bottom: 10px;" class="paradoxe-text-container">
+        <h2>L'infini est-il fini?</h2>
+        <p style="padding-bottom: 20px;">Cette question touche à la fois la philosophie et les mathématiques. En mathématiques, l'infini n'est pas un nombre ou une quantité finie, mais plutôt un concept qui décrit quelque chose sans limite. En philosophie, la question peut être explorée sous différents angles, mais la réponse dépend souvent de la perspective adoptée. L'infini peut être vu comme un processus sans fin plutôt qu'un état fini ou achevé.</p>
+    </div>
+</div>
+
+    <a href="acceuil.html" class="arrow-link"></a>
+    <footer>
+        <p>© 2024 Mathématiques HEFF - Brouillé A.</p>
+    </footer>
+    <script>
+        window.addEventListener('wheel', function(e) {
+            if (e.deltaY > 0) window.scrollBy(0, 100);
+            if (e.deltaY < 0) window.scrollBy(0, -100);
+        });
+
+        window.addEventListener('scroll', function() {
+            var containers = document.querySelectorAll('.container, .infini-container, .paradoxe-container');
+            var window_height = window.innerHeight;
+            var window_top_position = window.pageYOffset;
+            var window_bottom_position = (window_top_position + window_height);
+
+            Array.prototype.forEach.call(containers, function(container) {
+                var element_height = container.offsetHeight;
+                var element_top_position = container.offsetTop;
+                var element_bottom_position = (element_top_position + element_height);
+
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    container.style.opacity = '1';
+                } else {
+                    container.style.opacity = '0';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
