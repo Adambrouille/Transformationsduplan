@@ -181,34 +181,5 @@ En résumé, M.C. Escher était un artiste véritablement unique dont le travail
     <footer>
         <p>© 2024 Mathématiques HEFF - Brouillé A.</p>
     </footer>
-   <script>
-    window.addEventListener('wheel', function(e) {
-        if (e.deltaY > 0) window.scrollBy(0, 100);
-        if (e.deltaY < 0) window.scrollBy(0, -100);
-    });
-
-    window.addEventListener('scroll', function() {
-        var containers = document.querySelectorAll('.container, .infini-container, .paradoxe-container');
-        var window_height = window.innerHeight;
-        var window_top_position = window.pageYOffset;
-        var window_bottom_position = (window_top_position + window_height);
-
-        Array.prototype.forEach.call(containers, function(container, index) {
-            // Ignorer le premier élément
-            if (index === 0) return;
-
-            var element_height = container.offsetHeight;
-            var element_top_position = container.offsetTop;
-            var element_bottom_position = (element_top_position + element_height);
-
-            if ((element_bottom_position >= window_top_position) &&
-                (element_top_position <= window_bottom_position)) {
-                container.style.opacity = '1';
-            } else {
-                container.style.opacity = '0';
-            }
-        });
-    });
-</script>
 </body>
 </html>
