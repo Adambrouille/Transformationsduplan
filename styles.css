@@ -17,8 +17,8 @@ body {
 
 .arrow-link{
     position: fixed;
-    bottom: 100px;
-    right: 20px;
+    bottom: 15px;
+    right: 5px;
     font-size: 24px;
     color: #333;
     text-decoration: none;
