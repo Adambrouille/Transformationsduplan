@@ -10,7 +10,14 @@ a {
     text-decoration: none; /* Supprime le soulignement */
     color: inherit; /* Utilise la couleur du texte parent */
 }
-
+.arrow-link2{
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
 
 header, footer {
     background-color: #333;
