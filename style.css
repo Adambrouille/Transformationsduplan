@@ -50,8 +50,8 @@ header, footer {
 }
 
 #translation-animation {
-    width: 6vw;
-    height: 6vw;
+    width: 4rem;
+    height: 4rem;
     background-color: #3498db;
     position: relative;
     animation: translate 3s infinite alternate;
@@ -68,8 +68,8 @@ header, footer {
 }
 
 #square1 {
-    width: 6vw;
-    height: 6vw;
+    width: 4rem;
+    height: 4rem;
     background-color: #3498db;
     position: relative;
     animation: reflect 3s infinite alternate;
@@ -77,8 +77,8 @@ header, footer {
 }
 
 #square2 {
-    width: 6vw;
-    height: 6vw;
+    width: 4rem;
+    height: 4rem;
     background-color: #3498db;
     position: relative;
     animation: rotate 3s infinite alternate;
